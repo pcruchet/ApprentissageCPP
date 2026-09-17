@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet IPv4:  Fichier source de /home/USERS/PROFS/pcruchet/ApprentissageCPP/AdresseIP/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpeg"/></td>
+  <td id="projectalign">
+   <div id="projectname">Projet IPv4<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">/home/USERS/PROFS/pcruchet/ApprentissageCPP/AdresseIP/main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="ipv4_8h.html">ipv4.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *tab);</div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    6</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> adresse[4]= {192,168,1,1};</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> masque[4];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reseau[4];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> diffusion[4];</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_class" href="classIPv4.html">IPv4</a> uneAdresse(adresse, 24); <span class="comment">// instanciation de la classe IPv4</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    cout &lt;&lt; <span class="stringliteral">&quot;Adresse IPv4 : &quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(adresse);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    uneAdresse.<a class="code hl_function" href="classIPv4.html#a8c190dee9c4b4554d557470f36fa5952">ObtenirMasque</a>(masque); <span class="comment">// appel d&#39;une méthode</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    cout &lt;&lt; <span class="stringliteral">&quot;Masque : &quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(masque);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    uneAdresse.<a class="code hl_function" href="classIPv4.html#a0d305f90283d84f572ed6c3588b77fda">ObtenirAdresseReseau</a>(reseau);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    cout &lt;&lt; <span class="stringliteral">&quot;Réseau : &quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(reseau);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    uneAdresse.<a class="code hl_function" href="classIPv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7">ObtenirAdresseDiffusion</a>(diffusion);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    cout &lt;&lt; <span class="stringliteral">&quot;Diffusion : &quot;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(diffusion);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *tab)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> indice=0 ; indice &lt; 4 ; indice ++)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        cout  &lt;&lt; static_cast&lt;int&gt; (tab[indice]);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">if</span>(indice &lt; 3)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            cout &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> ;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    cout &lt;&lt; endl;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+</div>
+<div class="ttc" id="aclassIPv4_html"><div class="ttname"><a href="classIPv4.html">IPv4</a></div><div class="ttdoc">Représente une adresse au format IPv4.</div><div class="ttdef"><b>Definition</b> <a href="ipv4_8h_source.html#l00036">ipv4.h:37</a></div></div>
+<div class="ttc" id="aclassIPv4_html_a0d305f90283d84f572ed6c3588b77fda"><div class="ttname"><a href="classIPv4.html#a0d305f90283d84f572ed6c3588b77fda">IPv4::ObtenirAdresseReseau</a></div><div class="ttdeci">void ObtenirAdresseReseau(unsigned char *_reseau)</div><div class="ttdoc">IPv4::ObtenirAdresseReseau.</div><div class="ttdef"><b>Definition</b> <a href="ipv4_8cpp_source.html#l00102">ipv4.cpp:102</a></div></div>
+<div class="ttc" id="aclassIPv4_html_a8c190dee9c4b4554d557470f36fa5952"><div class="ttname"><a href="classIPv4.html#a8c190dee9c4b4554d557470f36fa5952">IPv4::ObtenirMasque</a></div><div class="ttdeci">void ObtenirMasque(unsigned char *_masque)</div><div class="ttdoc">IPv4::ObtenirMasque.</div><div class="ttdef"><b>Definition</b> <a href="ipv4_8cpp_source.html#l00091">ipv4.cpp:91</a></div></div>
+<div class="ttc" id="aclassIPv4_html_ab8d0b3c0eb10dc89d77df2c068a7eea7"><div class="ttname"><a href="classIPv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7">IPv4::ObtenirAdresseDiffusion</a></div><div class="ttdeci">void ObtenirAdresseDiffusion(unsigned char *_diffusion)</div><div class="ttdoc">IPv4::ObtenirAdresseDiffusion.</div><div class="ttdef"><b>Definition</b> <a href="ipv4_8cpp_source.html#l00115">ipv4.cpp:115</a></div></div>
+<div class="ttc" id="aipv4_8h_html"><div class="ttname"><a href="ipv4_8h.html">ipv4.h</a></div><div class="ttdoc">Déclaration de la classe IPv4.</div></div>
+<div class="ttc" id="amain_8cpp_html_ac604eefa1d2397a87e9fa710b3ed15da"><div class="ttname"><a href="main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da">AfficherTableau</a></div><div class="ttdeci">void AfficherTableau(const unsigned char *tab)</div><div class="ttdoc">AfficherTableau.</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00035">main.cpp:35</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

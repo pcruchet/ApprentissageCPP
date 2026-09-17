@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,60,105"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ac604eefa1d2397a87e9fa710b3ed15da" title="AfficherTableau." alt="" coords="155,5,277,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="47,78,74,58,107,40,140,28,142,33,109,44,77,63,50,82"/>
+<area shape="rect" id="Node000003" href="$classIPv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7" title="IPv4::ObtenirAdresseDiffusion." alt="" coords="108,55,324,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,86,110,79,111,85,61,92"/>
+<area shape="rect" id="Node000004" href="$classIPv4.html#a0d305f90283d84f572ed6c3588b77fda" title="IPv4::ObtenirAdresseReseau." alt="" coords="372,80,579,105"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="60,90,358,90,358,95,60,95"/>
+<area shape="rect" id="Node000005" href="$classIPv4.html#a8c190dee9c4b4554d557470f36fa5952" title="IPv4::ObtenirMasque." alt="" coords="137,156,295,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="54,103,109,134,151,149,149,154,107,139,51,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="325,75,358,79,358,84,324,81"/>
+</map>
