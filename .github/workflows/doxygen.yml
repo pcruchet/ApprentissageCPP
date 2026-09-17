@@ -5,9 +5,7 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'AdresseIP/**'          # Ne se déclenche que si AdresseIP change
-  workflow_dispatch:             # Permet un lancement manuel depuis GitHub
+    workflow_dispatch:             # Permet un lancement manuel depuis GitHub
 
 jobs:
   deploy-docs:
