@@ -1,0 +1,48 @@
+name: Documentation Doxygen — AdresseIP
+
+# Déclenchement automatique sur chaque push dans main
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'AdresseIP/**'          # Ne se déclenche que si AdresseIP change
+  workflow_dispatch:             # Permet un lancement manuel depuis GitHub
+
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write            # Nécessaire pour pousser sur gh-pages
+
+    steps:
+      # 1. Récupérer le code source
+      - name: Checkout du dépôt
+        uses: actions/checkout@v4
+
+      # 2. Installer Doxygen et Graphviz
+      #    (déjà installé chez vous en local, mais le runner GitHub est vierge)
+      - name: Installer Doxygen et Graphviz
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y doxygen graphviz
+
+      # 3. Générer la documentation
+      #    On se place dans AdresseIP/ où se trouve le Doxyfile
+      - name: Générer la documentation Doxygen
+        working-directory: AdresseIP
+        run: doxygen Doxyfile
+
+      # 4. Créer .nojekyll pour que GitHub Pages serve les fichiers
+      #    commençant par _ (ex: _search/, _static/)
+      - name: Créer .nojekyll
+        run: touch AdresseIP/docs/html/.nojekyll
+
+      # 5. Déployer sur la branche gh-pages
+      - name: Déployer sur GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: AdresseIP/docs/html    # Ce qui sera publié
+          clean: true                     # Supprime les anciens fichiers
