@@ -1,0 +1,5 @@
+<map id="IPv4::IPv4" name="IPv4::IPv4">
+<area shape="rect" id="Node000001" title="IPv4::IPv4 Construit un objet IPv4 avec une valeur initiale." alt="" coords="5,5,92,31"/>
+<area shape="rect" id="Node000002" href="$classIPv4.html#a1ea3bf78ad229baeed202617b806f219" title="IPv4::CalculerMasque." alt="" coords="140,5,303,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,15,126,15,126,21,92,21"/>
+</map>
