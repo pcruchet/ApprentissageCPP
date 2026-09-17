@@ -1,8 +1,0 @@
-<map id="IPv4::ObtenirAdresseReseau" name="IPv4::ObtenirAdresseReseau">
-<area shape="rect" id="Node000001" title="IPv4::ObtenirAdresseReseau." alt="" coords="372,5,579,31"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="359,21,60,21,60,15,359,15"/>
-<area shape="rect" id="Node000003" href="$classIPv4.html#ab8d0b3c0eb10dc89d77df2c068a7eea7" title="IPv4::ObtenirAdresseDiffusion." alt="" coords="108,31,324,56"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="359,32,324,35,324,30,358,27"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="110,31,60,24,60,19,111,26"/>
-</map>

@@ -2,7 +2,9 @@
 #include "ipv4.h"
 
 using namespace std;
+
 void AfficherTableau(const unsigned char *tab);
+
 int main()
 {
     unsigned char adresse[4]= {192,168,1,1};
@@ -12,18 +14,29 @@ int main()
     IPv4 uneAdresse(adresse, 24); // instanciation de la classe IPv4
     cout << "Adresse IPv4 : ";
     AfficherTableau(adresse);
+
     uneAdresse.ObtenirMasque(masque); // appel d'une méthode
     cout << "Masque : ";
     AfficherTableau(masque);
+
     uneAdresse.ObtenirAdresseReseau(reseau);
     cout << "Réseau : ";
     AfficherTableau(reseau);
+
     uneAdresse.ObtenirAdresseDiffusion(diffusion);
     cout << "Diffusion : ";
     AfficherTableau(diffusion);
     return 0;
 }
 
+/**
+ * @brief AfficherTableau
+ *
+ * @details Affiche un tableau de 4 octets sous la forme d'une adresse IPv4
+ *          ou un masque de sous réseau
+ *
+ * @param tab tableau reçu en parmètre
+ */
 void AfficherTableau(const unsigned char *tab)
 {
     for(int indice=0 ; indice < 4 ; indice ++)
